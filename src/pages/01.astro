@@ -1,0 +1,49 @@
+---
+// You can add any frontmatter here if needed
+---
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>The Journey</title>
+    <style>
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+  }
+  .choices {
+    display: flex;
+    gap: 40px;
+  }
+  .choice {
+    cursor: pointer;
+    width: 400px; /* Set the desired width */
+    height: 400px; /* Set the desired height */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+  }
+  .choice-text {
+    font-size: large;
+  }
+</style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Was ist mit Elvis?</h1>
+      <p id="story">Als du gerade die Wohung verlassen möchtest fällt dir etwas ein. "Elvis! Was mache ich nur mit dem Kater?"</p>
+      <div class="choices">
+        <a href="/012">
+          <div class="choice-text">Ich lasse ihn lieber zu Hause.</div>
+          <img src="src/assets/01_1.jpeg" alt="Ich bin bereit!" class="choice">
+        </a>
+        <a href="/012">
+          <div class="choice-text">Ich nehme ihn mit auf das Abenteuer.</div>
+          <img src="src/assets/01_2.jpeg" alt="Ja! Los gehts!" class="choice">
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
+

@@ -1,0 +1,49 @@
+---
+// You can add any frontmatter here if needed
+---
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>The Journey</title>
+    <style>
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+  }
+  .choices {
+    display: flex;
+    gap: 40px;
+  }
+  .choice {
+    cursor: pointer;
+    width: 400px; /* Set the desired width */
+    height: 400px; /* Set the desired height */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+  }
+  .choice-text {
+    font-size: large;
+  }
+</style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>The Journey</h1>
+      <p id="story">Deine Geburtstagsgeschichte beginnt...</p>
+      <div class="choices">
+        <a href="/01">
+          <div class="choice-text">Ich bin bereit!</div>
+          <img src="src/assets/1_1.jpeg" alt="Ich bin bereit!" class="choice">
+        </a>
+        <a href="/01">
+          <div class="choice-text">Ja! Los gehts!</div>
+          <img src="src/assets/1_2.jpeg" alt="Ja! Los gehts!" class="choice">
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
+

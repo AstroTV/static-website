@@ -1,0 +1,49 @@
+---
+// You can add any frontmatter here if needed
+---
+<html>
+  <head>
+    <title>Choice Game</title>
+    <style>
+      /* Add your CSS here */
+      .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+  }
+  .choices {
+    display: flex;
+    gap: 20px;
+  }
+  .choice {
+    cursor: pointer;
+    width: 400px; /* Set the desired width */
+    height: 400px; /* Set the desired height */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+  }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>The Journey</h1>
+      <p id="story">Deine Geburtstagsgeschichte beginnt...</p>
+      <div class="choices">
+        <img src="src/assets/1_1.jpeg" alt="Ich bin bereit! " class="choice" onclick="makeChoice('choice1')">
+        <img src="src/assets/1_2.jpeg" alt="Ja! Los gehts!" class="choice" onclick="makeChoice('choice2')">
+      </div>
+    </div>
+    <script>
+      function makeChoice(choice) {
+        const story = document.getElementById('story');
+        if (choice === 'choice1') {
+          story.textContent = 'You chose the first option. Your adventure continues...';
+        } else {
+          story.textContent = 'You chose the second option. Your adventure takes a different turn...';
+        }
+      }
+    </script>
+  </body>
+</html>

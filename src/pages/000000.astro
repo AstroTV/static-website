@@ -1,0 +1,71 @@
+---
+// You can add any frontmatter here if needed
+---
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>The Journey</title>
+    <style>
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+  }
+  .choices {
+    display: flex;
+    gap: 40px;
+  }
+  .choice {
+    cursor: pointer;
+    width: 200px; /* Set the desired width */
+    height: 200px; /* Set the desired height */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+  }
+  .choice-text {
+    font-size: large;
+  }
+</style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Die Hilfe-Nachricht</h1>
+      <p id="story">
+        Diese ganze Thematik mit der versteckten Schachtel hat dich ziemlich mitgenommen.<br>
+        Du gehst weiter und versuchst einfach mal deinen Kopf etwas auszuschalten. <br>
+        Vor dir siehst du plötzlich einen hohen Zaun mit einem verschlossenen Tor.<br>
+        "Oh mann - ich wollte doch nur in Ruhe weiterspazieren!"<br>
+        Das Tor ist mit einem zweistelligen Zahlenschloss versperrt.<br>
+        "Ich frage einfach die beste Psychologin der Welt um Hilfe" denkst du dir.<br>
+        Nimm dein Handy und verfasse folgendes E-Mail: <br>
+        An: nadine@roegl.com<br>
+        Text: "Eine frage. Liebe nadine. Findest du den code?"<br>
+        <br>
+        Den Code wirst du hoffentlich als Antwort erhalten.
+      </p>
+
+      <div class="choices">
+        <a href="/000000">
+          <div class="choice-text"></div>
+          <img src="/assets/06.jpeg" alt="" class="choice">
+        </a>
+        <a href="/0000000">
+          <div class="choice-text"></div>
+          <img src="/assets/11.jpeg" alt="" class="choice">
+        </a>
+        <a href="/000000">
+          <div class="choice-text"></div>
+          <img src="/assets/47.jpeg" alt="" class="choice">
+        </a>
+        <a href="/000000">
+          <div class="choice-text"></div>
+          <img src="/assets/93.jpeg" alt="" class="choice">
+        </a>
+
+      </div>
+    </div>
+  </body>
+</html>
+

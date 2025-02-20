@@ -1,0 +1,58 @@
+---
+// You can add any frontmatter here if needed
+---
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>The Journey</title>
+    <style>
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+  }
+  .choices {
+    display: flex;
+    gap: 40px;
+  }
+  .choice {
+    cursor: pointer;
+    width: 400px; /* Set the desired width */
+    height: 400px; /* Set the desired height */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+  }
+  .choice-text {
+    font-size: large;
+  }
+</style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Die goldene Halskette</h1>
+      <p id="story">
+        Ich wusste dass du zu neugierig bist die Schachtel einfach liegen zu lassen.<br>
+        Du öffnest also die metallene Schachtel.<br>
+        Als die ersten Lichstrahlen auf das Innere der Schachtel fallen glänzt die etwas goldenes entgegen.<br>
+        Staunend entnimmst du eine zierliche Halskette.<br>
+        Ist das nicht das berühmte Amulett des "New One" Ordens?<br>
+        <br>
+        Willst du es anlegen? <br>
+      </p>
+
+      <div class="choices">
+        <a href="/000000">
+          <div class="choice-text">Ich lege das Amulett an.</div>
+          <img src="/assets/04_2.jpeg" alt="Ich lege das Amulett an." class="choice">
+        </a>
+        <a href="/000000">
+          <div class="choice-text">Ich pack es lieber in meinen Rucksack.</div>
+          <img src="/assets/04_1.jpeg" alt="Ich pack es lieber in meinen Rucksack." class="choice">
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
+
